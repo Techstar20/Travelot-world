@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelot World - Book Your Flight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-blue-100">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-center mb-4">Travelot World</h1>
+            <form id="searchForm">
+                <label>From: <input type="text" id="from" required></label><br>
+                <label>To: <input type="text" id="to" required></label><br>
+                <label>Date: <input type="date" id="date" required></label><br>
+                <button type="submit" class="mt-4 bg-blue-500 text-white p-2 rounded">Search Flights</button>
+            </form>
+            <div id="results" class="mt-4"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
